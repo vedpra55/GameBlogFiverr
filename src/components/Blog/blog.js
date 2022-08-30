@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -86,7 +87,9 @@ export default function Blog() {
           <h5>{item.title}</h5>
           <p>{item.description}</p>
           <div className="flex  justify-end mt-5">
-            <button className="text-xs">Read more</button>
+            <Link href="/blog/game">
+              <button className="text-xs">Read more</button>
+            </Link>
           </div>
         </div>
       </div>
