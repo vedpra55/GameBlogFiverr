@@ -23,6 +23,8 @@ module.exports = {
         bgTestimonial: "url('/images/testimonial/bgTestimonial.webp')",
         bgPortfolio: "url('/images/portfolio/bgPortfolio.webp')",
         bgLetsTalk: "url('/images/letsTalk/bgLetsTalk.png')",
+        bgPortfolioDetailsMain:
+          "url('/images/portfolio/BgportfolioDetails2.png')",
       },
     },
     screens: {
