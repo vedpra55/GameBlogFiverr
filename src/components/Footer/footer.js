@@ -51,7 +51,7 @@ export default function Footer() {
             operators.
           </p>
         </div>
-        <div className="w-64 flex gap-x-3 items-center">
+        <div className="w-64 mt-5 md:mt-0 flex gap-x-3 items-center">
           {socailMediaLinks.map((item, i) => (
             <div key={i}>
               <div className="relative w-8  h-8 cursor-pointer">
