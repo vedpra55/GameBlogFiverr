@@ -60,6 +60,35 @@ export default function Team() {
                   alt={"team images"}
                   layout="fill"
                 />
+                {i === 0 && (
+                  <div className="flex flex-col gap-y-2 items-center justify-center absolute inset-0">
+                    <div className="relative w-16 h-10">
+                      <Image
+                        src="/images/team/teamLine.svg"
+                        layout="fill"
+                        alt="line"
+                      />
+                    </div>
+                    <div>
+                      <p className="  text-myBlack2 text-2xl">John Wick</p>
+                      <p className=" text-myBlack3 text-xs">
+                        Broadcast Manager
+                      </p>
+                    </div>
+                    <div className="relative w-16 h-10">
+                      <Image
+                        src="/images/team/teamLine.svg"
+                        layout="fill"
+                        alt="line"
+                      />
+                    </div>
+                    <div className="flex gap-x-3 tex-xs  text-myBlack2">
+                      <p>Facebook</p>
+                      <p>Twitter</p>
+                      <p>LinkedIn</p>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}

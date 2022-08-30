@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 
@@ -93,7 +94,9 @@ export default function Portfolio() {
           >
             <p className="font-bold h-12">{item.name}</p>
             <button className="flex gap-x-2 justify-start items-center">
-              <p>View Details</p>
+              <Link href="/portfolio/details">
+                <p>View Details</p>
+              </Link>
               <div className="relative w-5 h-5">
                 <Image
                   src="/images/portfolio/Arrow2.svg"

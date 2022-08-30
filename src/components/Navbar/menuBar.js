@@ -1,5 +1,6 @@
 import ImageComponent from "../Image/image";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MenuBar() {
   const pageLinks = [
@@ -40,9 +41,11 @@ export default function MenuBar() {
         <div className="relative w-5 h-5 md:w-8 md:h-8 xl:hidden md:block">
           <ImageComponent path="/icons/menuIcon.svg" alt={"logo"} />
         </div>
-        <div className="relative w-28 h-10 md:w-36 md:h-10">
-          <ImageComponent path="/icons/logo.svg" alt={"logo"} />
-        </div>
+        <Link href="/">
+          <div className="relative cursor-pointer w-28 h-10 md:w-36 md:h-10">
+            <ImageComponent path="/icons/logo.svg" alt={"logo"} />
+          </div>
+        </Link>
       </div>
     );
   }
